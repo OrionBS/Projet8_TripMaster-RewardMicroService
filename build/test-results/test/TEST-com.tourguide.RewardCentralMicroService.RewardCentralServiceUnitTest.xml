@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tourguide.RewardCentralMicroService.RewardCentralServiceUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-13T16:13:42" hostname="OBS-Desktop" time="0.444">
+  <properties/>
+  <testcase name="testGetAttractionsRewardPoints()" classname="com.tourguide.RewardCentralMicroService.RewardCentralServiceUnitTest" time="0.444"/>
+  <system-out><![CDATA[17:13:42.462 [Test worker] INFO com.tourguide.RewardCentralMicroService.service.impl.RewardCentralServiceImpl - Call
+17:13:42.484 [Test worker] INFO com.tourguide.RewardCentralMicroService.service.impl.RewardCentralServiceImpl - Call
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

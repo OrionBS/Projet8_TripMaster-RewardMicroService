@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-13T16:13:44" hostname="OBS-Desktop" time="0.69">
+  <properties/>
+  <testcase name="testGetAttractionRewardPoints()" classname="com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest" time="0.69"/>
+  <system-out><![CDATA[17:13:42.530 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:13:42.538 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:13:42.577 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:13:42.589 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest], using SpringBootContextLoader
+17:13:42.594 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest]: class path resource [com/tourguide/RewardCentralMicroService/RewardCentralIntegrationTest-context.xml] does not exist
+17:13:42.595 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest]: class path resource [com/tourguide/RewardCentralMicroService/RewardCentralIntegrationTestContext.groovy] does not exist
+17:13:42.595 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:13:42.596 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest]: RewardCentralIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:13:42.643 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest]
+17:13:42.700 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/orionbs/Documents/OpenClassrooms/Projet8_TripMaster/RewardCentralMicroService/build/classes/java/main/com/tourguide/RewardCentralMicroService/RewardCentralMicroServiceApplication.class]
+17:13:42.700 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tourguide.RewardCentralMicroService.RewardCentralMicroServiceApplication for test class com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest
+17:13:42.791 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.tourguide.RewardCentralMicroService.RewardCentralIntegrationTest]: using defaults.
+17:13:42.792 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:13:42.802 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+17:13:42.802 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+17:13:42.802 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@53d3ae89, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7c98bac0, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@bc85538, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6fc9c0cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@21a09c5a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@18d76c14, org.springframework.test.context.event.EventPublishingTestExecutionListener@517f9ba3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7011eee0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5576eef4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@76629f82, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5beda06e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2474331d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@46977829]
+17:13:42.805 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5fe7454c testClass = RewardCentralIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5e92a27 testClass = RewardCentralIntegrationTest, locations = '{}', classes = '{class com.tourguide.RewardCentralMicroService.RewardCentralMicroServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7dd2a5f7, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4d071e4b, [ImportsContextCustomizer@297db6ad key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@21d6dc81, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5408fca1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@62cb977a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@13da7ab0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+17:13:42.827 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2021-12-13 17:13:43.071  INFO 14542 --- [    Test worker] c.t.R.RewardCentralIntegrationTest       : Starting RewardCentralIntegrationTest using Java 11.0.11 on OBS-Desktop with PID 14542 (started by orionbs in /home/orionbs/Documents/OpenClassrooms/Projet8_TripMaster/RewardCentralMicroService)
+2021-12-13 17:13:43.073  INFO 14542 --- [    Test worker] c.t.R.RewardCentralIntegrationTest       : No active profile set, falling back to default profiles: default
+2021-12-13 17:13:43.846  INFO 14542 --- [    Test worker] c.t.R.s.impl.RewardCentralServiceImpl    : Call
+2021-12-13 17:13:44.523  INFO 14542 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-13 17:13:44.523  INFO 14542 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-13 17:13:44.531  INFO 14542 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-13 17:13:44.546  INFO 14542 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 23 ms
+2021-12-13 17:13:44.582  INFO 14542 --- [    Test worker] c.t.R.RewardCentralIntegrationTest       : Started RewardCentralIntegrationTest in 1.748 seconds (JVM running for 3.257)
+2021-12-13 17:13:44.662  INFO 14542 --- [    Test worker] c.t.R.s.impl.RewardCentralServiceImpl    : Call
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getAttractionRewardPoints
+       Parameters = {attractionId=[e7b07b49-1bbb-42b9-b1b0-553ff83ab737], userId=[c346fb29-7a5c-40f2-8af4-dffac012a772]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.tourguide.RewardCentralMicroService.restController.RewardCentralRestController
+           Method = com.tourguide.RewardCentralMicroService.restController.RewardCentralRestController#getAttractionRewardPoints(UUID, UUID)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = 296
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
