@@ -16,6 +16,12 @@ public class RewardCentralRestController {
         this.rewardCentralService = rewardCentralService;
     }
 
+    /**
+     * Transmet le nombre de point gagnés en fonction des params.
+     * @param attractionId l'id de l'attraction.
+     * @param userId l'id de l'utilisateur.
+     * @return la valeur de point gagnés.
+     */
     @GetMapping(path = "/getAttractionRewardPoints")
     public int getAttractionRewardPoints(@RequestParam UUID attractionId, @RequestParam UUID userId) {
         return rewardCentralService.getAttractionsRewardPoints(attractionId, userId);
